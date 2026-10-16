@@ -2,24 +2,26 @@
 
 ## 1. Executive Summary
 
-**QualiAgent Enterprise** is a production-grade multi-agent autonomous Quality Engineering (Agentic QE) platform. It eliminates manual, flaky test creation and maintenance through autonomous code understanding, guideline-grounded test synthesis, sandboxed test execution, iterative self-healing reflection loops, and LLM-as-a-Judge quality governance.
+**QualiAgent Enterprise** is a production-grade multi-agent autonomous Quality Engineering platform. It eliminates manual, flaky test creation and maintenance through autonomous code understanding, guideline-grounded test synthesis, sandboxed test execution, iterative self-healing reflection loops, and LLM-as-a-Judge quality governance.
 
-The platform directly aligns with the technical evaluation pillars defined in the **BayOne Solutions AI-Led Engineering Program**:
-1. **LLM Application Engineering**: Typed Pydantic data schemas, structured outputs, multi-provider abstraction (OpenAI, Gemini, local offline mock mode).
-2. **Agent Orchestration & Tooling**: Supervisor agent architecture, dynamic AST tool use, sandboxed test runners, error reflection mechanisms.
-3. **RAG Pipelines**: Hybrid semantic retrieval using FAISS vector indexing combined with BM25 keyword matching over enterprise testing standards.
-4. **Prompt / Evaluation Frameworks**: LLM-as-a-Judge rubric calculating Executability Rate, Assertion Density, Interface Coverage, Mocking Faithfulness, and Hallucination Penalties.
-5. **AI-Assisted Software Delivery**: CLI integration, GitHub Actions CI/CD automation, FastAPI REST endpoints, and Streamlit interactive dashboard.
+The platform is architected around five enterprise capabilities:
+1. **AST Code Analysis & Complexity Modeling**: Typed Pydantic data schemas, structured outputs, McCabe cyclomatic complexity scoring, and risk discovery.
+2. **Multi-Agent Orchestration & Tooling**: Supervisor agent architecture coordinating specialized analyzer, generator, healer, and judge agents with telemetry tracing.
+3. **Enterprise RAG Retrieval**: Hybrid semantic retrieval using FAISS vector indexing over enterprise testing standards and fixture rules.
+4. **Autonomous Self-Healing Test Sandbox**: Isolated subprocess test runners with feedback reflection diagnosing tracebacks and patching failing assertions.
+5. **LLM-as-a-Judge Evaluation & CI/CD Delivery**: Standardized Quality Scorecards, CLI integration, GitHub Actions automation, FastAPI REST endpoints, and interactive Streamlit UI.
 
 ---
 
-## 2. Three-Role Alignment Matrix
+## 2. Core Capabilities Matrix
 
-| JD Role / Track | Primary Responsibilities | How QualiAgent Demonstrates Mastery |
+| Architectural Capability | Technical Highlights | System Components |
 | :--- | :--- | :--- |
-| **1. Agentic QE Engineer** | Autonomous test generation, test execution, self-healing test automation, edge-case discovery, regression validation. | • AST extraction of classes, methods, and cyclomatic complexity.<br>• Isolated subprocess pytest execution in dynamic sandboxes.<br>• Closed-loop self-healing agent that diagnoses tracebacks and repairs failing tests. |
-| **2. Agentic AI Engineer** | Multi-agent orchestration, state graphs, tool invocation, memory & context management, RAG retrieval. | • Modular multi-agent topology (`Analyzer`, `Retriever`, `Generator`, `Healer`, `Judge`).<br>• FAISS vector indexing of enterprise testing guidelines.<br>• Telemetry tracing with per-agent latency and status logging. |
-| **3. Enterprise AI Engineer** | LLM-as-a-Judge, evaluation metrics, governance, CI/CD pipeline integration, API deployment, auditability. | • Standardized Quality Scorecards with composite QE metrics.<br>• GitHub Actions CI/CD workflow testing pull requests automatically.<br>• Production FastAPI backend and real-time Streamlit dashboard. |
+| **AST Static Analysis & Complexity** | Extracts public interfaces, parameter types, raised exceptions, and McCabe cyclomatic complexity. | • `qualiagent.core.ast_parser`<br>• `CodebaseAnalyzerAgent` |
+| **Multi-Agent Supervisor Orchestration** | Coordinates specialized agents with state tracking, latency recording, and execution tracing. | • `QEOrchestrator`<br>• `qualiagent.agents.base` |
+| **RAG Guideline Grounding** | Vector similarity retrieval over enterprise testing rules using normalized FAISS indices. | • `qualiagent.rag.retriever`<br>• `LocalEmbeddingEngine` |
+| **Sandboxed Self-Healing Execution** | Ephemeral subprocess pytest sandbox diagnosing tracebacks and iteratively repairing failing tests. | • `TestSandbox`<br>• `SelfHealingAgent` |
+| **Quality Governance & CI/CD** | Programmatic QE metrics combined with LLM-as-a-Judge scorecards, CLI, and GitHub Actions. | • `QEJudge`<br>• `agentic-qe-ci.yml`<br>• `FastAPI` / `Streamlit` |
 
 ---
 

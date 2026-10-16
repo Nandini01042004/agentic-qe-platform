@@ -65,11 +65,12 @@ def root():
     return {
         "service": "QualiAgent Enterprise Platform",
         "version": "1.0.0",
-        "status": "online",
-        "active_roles": [
-            "Agentic QE Engineer",
-            "Agentic AI Engineer",
-            "Enterprise AI Engineer",
+        "capabilities": [
+            "AST Codebase Analysis",
+            "Autonomous Test Generation",
+            "Self-Healing Sandbox",
+            "FAISS Guideline RAG",
+            "LLM-as-a-Judge Governance",
         ],
         "active_agents": [
             "CodebaseAnalyzerAgent",

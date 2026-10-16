@@ -4,35 +4,37 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Test Suite](https://img.shields.io/badge/pytest-10%20passed-brightgreen.svg)]()
 [![Architecture](https://img.shields.io/badge/Architecture-Multi--Agent%20Supervisor-purple.svg)]()
-[![Track](https://img.shields.io/badge/BayOne%20Track-Agentic%20QE%20%7C%20Agentic%20AI%20%7C%20Enterprise%20AI-orange.svg)]()
+[![System](https://img.shields.io/badge/System-Autonomous%20Quality%20Engineering-orange.svg)]()
 
-> **QualiAgent Enterprise** is a production-grade multi-agent autonomous Quality Engineering (Agentic QE) platform. It eliminates manual, flaky test creation and maintenance through autonomous AST static code understanding, FAISS-grounded enterprise RAG guidelines, isolated sandboxed test execution, iterative self-healing reflection loops, and LLM-as-a-Judge quality governance.
+> **QualiAgent Enterprise** is a production-grade multi-agent autonomous Quality Engineering platform. It eliminates manual, flaky test creation and maintenance through autonomous AST static code understanding, FAISS-grounded enterprise RAG guidelines, isolated sandboxed test execution, iterative self-healing reflection loops, and LLM-as-a-Judge quality governance.
 
 ---
 
-## 🎯 Direct Alignment with BayOne Track Requirements
+## 🎯 Core Capabilities
 
-This project is specifically architected to demonstrate end-to-end technical mastery across the **three core tracks** defined in the **BayOne Solutions AI-Led Engineering Program**:
+QualiAgent Enterprise is designed to automate and elevate software quality engineering through intelligent agents, deterministic verification, and automated governance:
 
 ```
 +----------------------------------------------------------------------------------------------------+
 |                                    QUALIAGENT ENTERPRISE                                           |
 |                                                                                                    |
-|    [ Track 1: Agentic QE ]           [ Track 2: Agentic AI ]           [ Track 3: Enterprise AI ]  |
-|  • AST Static Analysis             • Multi-Agent Supervisor Pattern  • LLM-as-a-Judge Governance   |
-|  • Pytest Subprocess Sandbox       • Vector RAG via FAISS            • CI/CD GitHub Actions        |
-|  • Closed-Loop Self-Healing        • Structured Pydantic Schemas     • FastAPI REST Backend        |
-|  • Boundary & Edge Testing         • Multi-Provider LLM Engine       • Real-Time Streamlit UI      |
+|    [ Code Intelligence ]           [ Multi-Agent Systems ]           [ Enterprise Delivery ]       |
+|  • AST Static Analysis             • Supervisor-Agent Pattern        • LLM-as-a-Judge Governance   |
+|  • Cyclomatic Complexity Model     • Vector RAG via FAISS            • CI/CD GitHub Actions        |
+|  • Ephemeral Pytest Sandbox        • Structured Pydantic Schemas     • FastAPI REST Backend        |
+|  • Closed-Loop Self-Healing        • Multi-Provider LLM Engine       • Real-Time Streamlit UI      |
 +----------------------------------------------------------------------------------------------------+
 ```
 
-### Detailed Competency Matrix
+### Capability Overview
 
-| JD Role / Track | Core Competencies Required | How QualiAgent Fulfills It |
+| Core Capability | Technical Highlights | Benefits |
 | :--- | :--- | :--- |
-| **1. Agentic QE (Quality Engineering) Engineer** | Autonomous test generation, test execution, self-healing tests, boundary/edge validation, regression test automation. | • **AST Code Parser** extracts function contracts, signatures, and cyclomatic complexity.<br>• **Subprocess Sandbox** runs tests in isolated environments.<br>• **Self-Healing Agent** inspects stack traces, diagnoses root causes, and patches tests autonomously. |
-| **2. Agentic AI / LLM Application Engineer** | Multi-agent orchestration, agent state graphs, dynamic tool calling, context & prompt engineering, RAG pipelines. | • **Supervisor Orchestrator** manages 5 specialized agents.<br>• **FAISS RAG Retriever** indexes company testing standards and prevents hallucinations.<br>• **Provider Abstraction** supports OpenAI, Gemini, Anthropic, and local zero-cost heuristic modes. |
-| **3. Enterprise AI Engineer** | LLM-as-a-Judge, evaluation metrics, governance, auditability, CI/CD automation, API architecture. | • **Quality Scorecard** measures Executability, Assertion Density, and Hallucination Penalties.<br>• **GitHub Actions CI/CD** automates test generation and auditing on pull requests.<br>• **FastAPI Service & Streamlit UI** provide production deployment interfaces. |
+| **AST Code Intelligence** | Static AST inspection extracting function signatures, arguments, type hints, and McCabe cyclomatic complexity. | Eliminates prompt guesswork by identifying exact contracts and high-risk branching paths. |
+| **Autonomous Test Synthesis** | Generates idiomatic pytest suites with fixtures, parameterized edge tests (`@pytest.mark.parametrize`), and exception handling. | Maximizes test coverage and asserts explicit negative branches. |
+| **Sandboxed Self-Healing** | Executes tests in an ephemeral subprocess sandbox, diagnoses tracebacks (`AssertionError`, `TypeError`), and patches failing tests. | Drastically reduces flaky tests and automates maintenance cycles. |
+| **FAISS Guideline Grounding** | Normalized vector similarity retrieval over enterprise testing conventions, fixture policies, and mocking rules. | Enforces testing standards without hallucinating non-existent mock structures. |
+| **LLM-as-a-Judge Governance** | Programmatic metrics (Executability %, Assertion Density) paired with LLM-as-a-Judge scoring and letter grades (A+ to F). | Delivers executive quality gates and automated PR audit reports in CI/CD. |
 
 ---
 
@@ -185,8 +187,7 @@ c:\Agentic_AI\
 │   └── workflows/
 │       └── agentic-qe-ci.yml          # GitHub Actions CI/CD pipeline
 ├── docs/
-│   ├── ARCHITECTURE.md                 # System architecture & sequence diagrams
-│   └── INTERVIEW_GUIDE.md              # Interview preparation & defense guide
+│   └── ARCHITECTURE.md                 # System architecture & sequence diagrams
 ├── examples/
 │   ├── sample_code/
 │   │   ├── auth_service.py             # Target codebase: Authentication & JWT

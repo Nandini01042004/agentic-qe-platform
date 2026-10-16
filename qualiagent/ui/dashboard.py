@@ -55,7 +55,7 @@ SAMPLE_FILES = {
 # Sidebar
 st.sidebar.image("https://img.icons8.com/fluency/96/artificial-intelligence.png", width=64)
 st.sidebar.title("QualiAgent Controls")
-st.sidebar.markdown("**Target Track**: Agentic QE / Agentic AI / Enterprise AI")
+st.sidebar.markdown("**Platform**: Autonomous Quality Engineering")
 
 selected_sample_name = st.sidebar.selectbox(
     "Select Target Service:",
