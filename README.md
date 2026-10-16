@@ -69,8 +69,8 @@ flowchart TD
 ### 1. Clone & Set Up Environment
 
 ```bash
-git clone https://github.com/your-username/qualiagent-enterprise.git
-cd qualiagent-enterprise
+git clone https://github.com/Nandini01042004/agentic-qe-platform.git
+cd agentic-qe-platform
 
 # Create and activate virtual environment
 python -m venv venv
